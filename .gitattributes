@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+nomeal = str(input('nome do aluno:'))
+media1 = float(input('Digite a primeira média:'))
+media2 = float(input('Digite a segunda média:'))
+mediaf = (media1+media2)/2
+if mediaf >=7:
+    print('Sua média foi {}'.format(mediaf))
+    print('Aluno {} , APROVADO.'.format(nomeal))
+elif mediaf <5:
+    print('Sua média foi {}'.format(mediaf))
+    print('Aluno {} , REPROVADO. '.format(nomeal))
+elif mediaf >=5:
+    print('Sua média foi {}'.format(mediaf))
+    print('Aluno {} , RECUPERAÇÃO. '.format(nomeal))
+else:
+    print('Desculpe nota inválida, Tente novamente.')
+
